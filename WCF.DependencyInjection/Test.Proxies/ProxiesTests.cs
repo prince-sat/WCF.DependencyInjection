@@ -162,6 +162,24 @@ namespace Test.Proxies
             Assert.That((_testClass._articleProxy as ArticleClient).State, Is.EqualTo(CommunicationState.Closed));
             Assert.That((_testClass._blogProxy as BlogClient).State, Is.EqualTo(CommunicationState.Closed));
         }
+        [Test]
+        public void test_article_extension_data_not_empty()
+        {
+            Client.Contracts.IArticleService proxy;
+            Client.Entities.Article[] articles = null;
 
+            using (var lifetime = container.BeginLifetimeScope())
+            {
+                proxy = container.Resolve<Client.Contracts.IArticleService>();
+
+                articles = proxy.GetAll();
+            }
+
+            Assert.That(articles.Count(), Is.EqualTo(1));
+
+            var contentLength = Core.Common.Extensions.Extensions.GetExtensionDataMemberValue(articles.First(), "ContentLength");
+
+            Assert.That(articles.First().Contents.Length, Is.EqualTo(Int32.Parse(contentLength.ToString())));
+        }
     }
 }
