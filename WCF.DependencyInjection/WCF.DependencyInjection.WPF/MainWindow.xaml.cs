@@ -20,7 +20,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WCF.DependencyInjection.WPF
+namespace WCF.WPF
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml

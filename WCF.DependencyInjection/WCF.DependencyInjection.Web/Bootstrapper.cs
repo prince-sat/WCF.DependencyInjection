@@ -9,7 +9,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
-namespace WCF.DependencyInjection.Web
+namespace WCF.Web
 {
     public static class Bootstrapper
     {

@@ -27,13 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.Proxies", "Client.Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "Core.Common\Core.Common.csproj", "{911EE3FD-E63F-41E2-9D09-9104E3D5E034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.DependencyInjection.Web", "WCF.DependencyInjection.Web\WCF.DependencyInjection.Web.csproj", "{57572134-E540-4282-949D-0914E72604E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Web", "WCF.DependencyInjection.Web\WCF.Web.csproj", "{57572134-E540-4282-949D-0914E72604E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Core", "Data.Core\Data.Core.csproj", "{BB9A741E-1909-4345-AE7C-5896B83CF686}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proxies", "Test.Proxies\Test.Proxies.csproj", "{6ADA4855-96FC-4E0E-962A-74943974781D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.DependencyInjection.WPF", "WCF.DependencyInjection.WPF\WCF.DependencyInjection.WPF.csproj", "{9171F6F3-B77A-42B0-9522-414A5076076B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.WPF", "WCF.DependencyInjection.WPF\WCF.WPF.csproj", "{9171F6F3-B77A-42B0-9522-414A5076076B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace WCF.DependencyInjection.Web
+namespace WCF.Web
 {
     public class Global : System.Web.HttpApplication
     {
