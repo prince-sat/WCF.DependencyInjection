@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Core", "Data.Core\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proxies", "Test.Proxies\Test.Proxies.csproj", "{6ADA4855-96FC-4E0E-962A-74943974781D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.DependencyInjection.WPF", "WCF.DependencyInjection.WPF\WCF.DependencyInjection.WPF.csproj", "{9171F6F3-B77A-42B0-9522-414A5076076B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{6ADA4855-96FC-4E0E-962A-74943974781D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADA4855-96FC-4E0E-962A-74943974781D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADA4855-96FC-4E0E-962A-74943974781D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9171F6F3-B77A-42B0-9522-414A5076076B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9171F6F3-B77A-42B0-9522-414A5076076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9171F6F3-B77A-42B0-9522-414A5076076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9171F6F3-B77A-42B0-9522-414A5076076B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{57572134-E540-4282-949D-0914E72604E6} = {F5AF23B0-96B8-42A2-8FD3-02E7F2B95633}
 		{BB9A741E-1909-4345-AE7C-5896B83CF686} = {2A8F990A-BE1C-41F8-9FC1-A62CC26DB616}
 		{6ADA4855-96FC-4E0E-962A-74943974781D} = {F6F381F7-EB7E-47CD-AC4A-9A44F50AD4F4}
+		{9171F6F3-B77A-42B0-9522-414A5076076B} = {F5AF23B0-96B8-42A2-8FD3-02E7F2B95633}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AB75425-5CA2-4F49-9EC4-364DF023CBA4}
