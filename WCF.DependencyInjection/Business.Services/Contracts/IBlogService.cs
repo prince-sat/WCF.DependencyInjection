@@ -23,6 +23,7 @@ namespace Business.Services.Contracts
         [OperationContract]
         Blog GetById(int id);
 
+        [OperationContract]
         Blog[] GetAll();
     }
 }

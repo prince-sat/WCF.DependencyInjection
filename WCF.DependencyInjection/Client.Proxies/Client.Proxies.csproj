@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuthBehavior\AuthBehavior.csproj">
+      <Project>{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}</Project>
+      <Name>AuthBehavior</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Client.Contracts\Client.Contracts.csproj">
       <Project>{517444b2-4100-476f-af6a-964865dd9f53}</Project>
       <Name>Client.Contracts</Name>

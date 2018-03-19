@@ -137,6 +137,28 @@ namespace Test.Proxies
             if ((proxy as ArticleClient).State == CommunicationState.Opened)
                 (proxy as ClientBase<Client.Contracts.IArticleService>).Close();
         }
+        [Test]
+        public void test_blog_proxy_getall()
+        {
+            Client.Contracts.IBlogService proxy;
+            Client.Entities.Blog[] blogs = null;
+            using (var lifetime = container.BeginLifetimeScope())
+            {
+                //string authUsername = "chris";
+                //string authPassword = "sakell";
+                proxy = container.Resolve<Client.Contracts.IBlogService>(new NamedParameter[] {
+                    new NamedParameter("authUsername","chris"),
+                    new NamedParameter("authPassword","sakell")
+                });
+                Client.Entities.Blog _blog = proxy.GetById(1);
+                blogs = proxy.GetAll();
+            }
+            Assert.That(blogs.Count(), Is.EqualTo(1));
+
+            // Close connection
+            if ((proxy as BlogClient).State == CommunicationState.Opened)
+                (proxy as ClientBase<Client.Contracts.IBlogService>).Close();
+        }
 
         [Test]
         public void test_constructor_injected_proxy()

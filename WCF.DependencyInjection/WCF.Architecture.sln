@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proxies", "Test.Proxie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.WPF", "WCF.DependencyInjection.WPF\WCF.WPF.csproj", "{9171F6F3-B77A-42B0-9522-414A5076076B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{7BC874B5-D637-41A4-9C10-F489473232C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthBehavior", "AuthBehavior\AuthBehavior.csproj", "{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,10 @@ Global
 		{9171F6F3-B77A-42B0-9522-414A5076076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9171F6F3-B77A-42B0-9522-414A5076076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9171F6F3-B77A-42B0-9522-414A5076076B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,7 @@ Global
 		{BB9A741E-1909-4345-AE7C-5896B83CF686} = {2A8F990A-BE1C-41F8-9FC1-A62CC26DB616}
 		{6ADA4855-96FC-4E0E-962A-74943974781D} = {F6F381F7-EB7E-47CD-AC4A-9A44F50AD4F4}
 		{9171F6F3-B77A-42B0-9522-414A5076076B} = {F5AF23B0-96B8-42A2-8FD3-02E7F2B95633}
+		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380} = {7BC874B5-D637-41A4-9C10-F489473232C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AB75425-5CA2-4F49-9EC4-364DF023CBA4}

@@ -22,7 +22,7 @@ namespace Client.Contracts
 
         [OperationContract]
         Blog GetById(int id);
-
+        [OperationContract]
         Blog[] GetAll();
     }
 }

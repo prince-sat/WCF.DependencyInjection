@@ -1,4 +1,5 @@
-﻿using Business.Entities;
+﻿using AuthBehavior.Behaviors;
+using Business.Entities;
 using Business.Services.Contracts;
 using Data.Core.Infrastructure;
 using Data.Core.Repositories;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Business.Services.Implementations
 {
+    [AuthenticationInspectorBehavior]
     public class BlogService : IBlogService
     {
         private readonly IUnitOfWork _unitOfWork;
