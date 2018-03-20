@@ -150,7 +150,6 @@ namespace Test.Proxies
                     new NamedParameter("authUsername","chris"),
                     new NamedParameter("authPassword","sakell")
                 });
-                Client.Entities.Blog _blog = proxy.GetById(1);
                 blogs = proxy.GetAll();
             }
             Assert.That(blogs.Count(), Is.EqualTo(1));

@@ -60,6 +60,8 @@ namespace Test.Proxies
                 });
             builder.RegisterInstance(_articlesRepository.Object).As<IArticleRepository>();
 
+          
+
             var _blogsRepository = new Mock<IBlogRepository>();
             _blogsRepository.Setup(x => x.GetById(It.IsAny<int>()))
                 .Returns(new Func<int, Business.Entities.Blog>(
@@ -70,6 +72,14 @@ namespace Test.Proxies
                         Owner = "Chris Sakellarios",
                         URL = "https://chsakell.com/"
                     }));
+            _blogsRepository.Setup(x => x.GetAll()).Returns(new List<Business.Entities.Blog>()
+                {
+                    new Business.Entities.Blog() {
+                        ID = 1,
+                        Name = "chsakell's blog",
+                        Owner = "Chris Sakellarios",
+                        URL = "https://chsakell.com/" }
+                });
             builder.RegisterInstance(_blogsRepository.Object).As<IBlogRepository>();
 
             builder.RegisterType<ClientInjectionClass>();
