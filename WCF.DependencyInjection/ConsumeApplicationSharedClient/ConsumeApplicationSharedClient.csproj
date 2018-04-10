@@ -115,6 +115,10 @@
       <Project>{997c970f-16e9-46e2-abfa-4b33af28386a}</Project>
       <Name>Client.Proxies</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj">
+      <Project>{911EE3FD-E63F-41E2-9D09-9104E3D5E034}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

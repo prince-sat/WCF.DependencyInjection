@@ -10,13 +10,13 @@ namespace Business.Entities
     [DataContract]
     public class Blog : IExtensibleDataObject
     {
-        [DataMember]
+        [DataMember(Order = 1)]
         public int ID { get; set; }
-        [DataMember]
+        [DataMember(Order = 2)]
         public string Name { get; set; }
-        [DataMember]
+        [DataMember(Order = 3)]
         public string URL { get; set; }
-        [DataMember]
+        [DataMember(Order = 4)]
         public string Owner { get; set; }
 
         #region IExtensibleDataObject Members

@@ -45,7 +45,7 @@ namespace ConsumeApplicationSharedClient
             try
             {
                 Client.Contracts.IBlogService proxy;
-                           using (var lifetime = container.BeginLifetimeScope())
+                using (var lifetime = container.BeginLifetimeScope())
                 {
                     //string authUsername = "chris";
                     //string authPassword = "sakell";
@@ -54,15 +54,20 @@ namespace ConsumeApplicationSharedClient
                     new NamedParameter("authPassword","sakell")
                 });
                     Client.Entities.Blog _blog = proxy.GetById(1);
-                   
+                    if (_blog != null)
+                    {
+                        lbxResult.Items.Clear();
+                        lbxResult.Items.Add(_blog.Name + " by " + _blog.Owner);
+                    }
+
                 }
-               
+
             }
             catch (Exception ex)
             {
-             MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
-           
+
         }
     }
 }
