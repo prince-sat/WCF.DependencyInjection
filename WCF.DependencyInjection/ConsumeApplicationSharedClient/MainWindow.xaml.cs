@@ -32,7 +32,7 @@ namespace ConsumeApplicationSharedClient
 
             builder = new Autofac.ContainerBuilder();
             // register proxies
-            builder.Register(c => new ChannelFactory<Client.Contracts.IBlogService>("BasicHttpBinding_IBlogService"))
+            builder.Register(c => new ChannelFactory<Client.Contracts.IBlogService>("BasicHttpBinding_IBlogService_9002"))
               .InstancePerLifetimeScope();
             builder.RegisterType<BlogClient>().As<Client.Contracts.IBlogService>().UseWcfSafeRelease();
             // build container

@@ -35,5 +35,5 @@ using System.Runtime.Serialization;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: ContractNamespace("http://www.chsakell.com/WCF_DI",
+[assembly: ContractNamespace("http://www.MyCompany.com/WcfArchitecture",
                               ClrNamespace = "Client.Entities")]
