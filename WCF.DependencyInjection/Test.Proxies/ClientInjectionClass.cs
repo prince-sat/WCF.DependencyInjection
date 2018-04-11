@@ -1,4 +1,5 @@
 ﻿using Autofac.Util;
+using Client.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,9 +44,9 @@ namespace Test.Proxies
             return _articleProxy.GetAll();
         }
 
-        public Client.Entities.Blog GetBlogById(int id)
+        public Client.Entities.BlogInfo GetBlogById(BlogRequest blogRequest)
         {
-            return _blogProxy.GetById(id);
+            return _blogProxy.GetById(blogRequest);
         }
 
         #endregion

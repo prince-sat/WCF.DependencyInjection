@@ -53,7 +53,7 @@ namespace ConsumeApplicationSharedClient
                     new NamedParameter("authUsername","chris"),
                     new NamedParameter("authPassword","sakell")
                 });
-                    Client.Entities.Blog _blog = proxy.GetById(1);
+                    Client.Entities.BlogInfo _blog = proxy.GetById(new Client.Entities.BlogRequest { BlogId=1});
                     if (_blog != null)
                     {
                         lbxResult.Items.Clear();

@@ -40,9 +40,9 @@ namespace Business.Services.Implementations
             _unitOfWork.Commit();
         }
 
-        public Blog GetById(int id)
+        public BlogInfo GetById(BlogRequest blogRequest)
         {
-            return _blogRepository.GetById(id);
+            return new BlogInfo(_blogRepository.GetById(blogRequest.BlogId));
         }
 
         public Blog[] GetAll()

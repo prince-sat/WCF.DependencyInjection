@@ -36,9 +36,10 @@ namespace Client.Proxies
             Channel.Delete(blog);
         }
 
-        public Blog GetById(int id)
+        public BlogInfo GetById( BlogRequest blogRequest)
         {
-            return Channel.GetById(id);
+           // return Channel.GetById(id);
+            return Channel.GetById(blogRequest);
         }
 
         public Blog[] GetAll()

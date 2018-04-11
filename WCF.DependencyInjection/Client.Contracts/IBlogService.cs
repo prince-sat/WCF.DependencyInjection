@@ -21,7 +21,8 @@ namespace Client.Contracts
         void Delete(Blog blog);
 
         [OperationContract]
-        Blog GetById(int id);
+        //Blog GetById(int id);
+        BlogInfo GetById(BlogRequest blogRequest);
         [OperationContract]
         Blog[] GetAll();
     }
