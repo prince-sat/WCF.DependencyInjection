@@ -43,6 +43,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client Applications", "Clie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumeApplicationSharedClient", "ConsumeApplicationSharedClient\ConsumeApplicationSharedClient.csproj", "{EA222C1F-38EC-4273-80BA-8993891AB533}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions", "Exceptions", "{34EFBE31-5868-4117-92D6-9D46917184EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{C683BAD7-1A23-406F-88B3-9245661C5339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{EA222C1F-38EC-4273-80BA-8993891AB533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA222C1F-38EC-4273-80BA-8993891AB533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA222C1F-38EC-4273-80BA-8993891AB533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C683BAD7-1A23-406F-88B3-9245661C5339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C683BAD7-1A23-406F-88B3-9245661C5339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C683BAD7-1A23-406F-88B3-9245661C5339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C683BAD7-1A23-406F-88B3-9245661C5339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +122,7 @@ Global
 		{9171F6F3-B77A-42B0-9522-414A5076076B} = {F5AF23B0-96B8-42A2-8FD3-02E7F2B95633}
 		{D46E6FB0-371D-4E7D-AFA5-75B2AEFCD380} = {7BC874B5-D637-41A4-9C10-F489473232C8}
 		{EA222C1F-38EC-4273-80BA-8993891AB533} = {9738323D-71F7-41C4-8BB1-441813AB2402}
+		{C683BAD7-1A23-406F-88B3-9245661C5339} = {34EFBE31-5868-4117-92D6-9D46917184EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AB75425-5CA2-4F49-9EC4-364DF023CBA4}
