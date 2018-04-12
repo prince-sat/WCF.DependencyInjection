@@ -51,7 +51,7 @@ namespace Business.Entities
         public string Owner { get; set; }
 
         #region IExtensibleDataObject Members
-
+        //https://www.youtube.com/watch?v=XSWwZMM_lB4&list=PL6n9fhu94yhVxEyaRMaMN_-qnDdNVGsL1&index=13
         public ExtensionDataObject ExtensionData { get; set; }
 
         #endregion

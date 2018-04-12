@@ -82,11 +82,11 @@ namespace Client.Entities
                 set { _owner = value; }
             }
 
-            #endregion
+        #endregion
 
-            #region IExtensibleDataObject
-
-            public ExtensionDataObject ExtensionData { get; set; }
+        #region IExtensibleDataObject
+        //https://www.youtube.com/watch?v=XSWwZMM_lB4&list=PL6n9fhu94yhVxEyaRMaMN_-qnDdNVGsL1&index=13
+        public ExtensionDataObject ExtensionData { get; set; }
 
             #endregion
 
